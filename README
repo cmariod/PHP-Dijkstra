@@ -2,4 +2,5 @@ Dijkstra's shortest path-algorithm in PHP including an implementation of a prior
 
 See RunTest.php for usage.
 
-Author: doug@neverfear.org
+Original Author: doug@neverfear.org
+Forked and updated by cmariod@gmail.com
