@@ -1,8 +1,6 @@
 <?php
 
-/*
- * Author: doug@neverfear.org
- */
+namespace Cmariod\PhpDijkstra;
 
 class PriorityList {
 	public $next;
