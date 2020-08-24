@@ -1,7 +1,9 @@
 <?php
-/*
- * Author: doug@neverfear.org
- */
+
+namespace Cmariod\PhpDijkstra;
+
+use Cmariod\PhpDijkstra\PriorityQueue;
+use Cmariod\PhpDijkstra\PriorityList;
 
 require_once("PriorityQueue.php");
 
@@ -43,7 +45,9 @@ class Graph {
 		$previous = array();
 		
 		$queue = array();
-		$Q = new PriorityQueue("compareWeights");
+		$Q = new PriorityQueue(function ($a, $b) {
+			return $a->data[0] - $b->data[0];
+		});
 		$Q->add(array($dist[$from], $from));
 		
 		$nodes = $this->nodes;
@@ -101,9 +105,3 @@ class Graph {
 	}
 	
 }
-
-function compareWeights($a, $b) {
-	return $a->data[0] - $b->data[0];
-}
-
-
