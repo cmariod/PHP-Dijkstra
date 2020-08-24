@@ -1,0 +1,19 @@
+{
+    "name": "cmariod/php-dijkstra",
+    "authors": [
+        {
+            "name": "cmariod",
+            "email": "cmariod@gmail.com"
+        }
+    ],
+    "config": {
+    },
+    "require": {},
+    "require-dev": {
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
