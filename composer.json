@@ -1,5 +1,7 @@
 {
     "name": "cmariod/php-dijkstra",
+    "description": "A simple Laravel package to calculate shortest path between nodes or edges with Dijkstra algorithm",
+    "license": "MIT",
     "authors": [
         {
             "name": "cmariod",
