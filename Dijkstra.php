@@ -31,7 +31,7 @@ class Graph {
 		array_push($this->nodes[$start], new Edge($start, $end, $weight));
 	}
     
-    public function removenode($index) {
+  public function removenode($index) {
 		array_splice($this->nodes, $index, 1);
 	}
 	
@@ -61,7 +61,7 @@ class Graph {
 			$visited[$u] = True;
 			
 			if (!isset($nodes[$u])) {
-				print "WARNING: '$u' is not found in the node list\n";
+        throw new \Exception("'$u' is not found in the node list");
 			}
 			
 			foreach($nodes[$u] as $edge) {
